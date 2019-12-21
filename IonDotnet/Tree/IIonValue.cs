@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using IonDotnet.Tree.Impl;
 
 namespace IonDotnet.Tree
 {
@@ -7,6 +8,8 @@ namespace IonDotnet.Tree
         IIonBlob, IIonList, IIonSexp, IIonStruct, IIonDatagram
     {
         IReadOnlyCollection<SymbolToken> GetTypeAnnotations();
+        IIonContainer Container { get; set; }
+        SymbolToken FieldNameSymbol { get; set; }
         bool HasAnnotation(string text);
         void AddTypeAnnotation(string annotation);
         void AddTypeAnnotation(SymbolToken annotation);

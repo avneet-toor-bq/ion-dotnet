@@ -20,7 +20,7 @@ namespace IonDotnet.Tree.Impl
         /// </summary>
         public static IonTimestamp NewNull() => new IonTimestamp(true);
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;

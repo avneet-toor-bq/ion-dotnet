@@ -24,7 +24,7 @@ namespace IonDotnet.Tree.Impl
         /// </summary>
         public static IonClob NewNull() => new IonClob();
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;

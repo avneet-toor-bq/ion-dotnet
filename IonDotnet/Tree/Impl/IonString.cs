@@ -17,7 +17,7 @@ namespace IonDotnet.Tree.Impl
         /// </summary>
         public static IonString NewNull() => new IonString(null);
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;

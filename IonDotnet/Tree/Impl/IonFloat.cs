@@ -27,7 +27,7 @@ namespace IonDotnet.Tree.Impl
         /// </summary>
         public static IonFloat NewNull() => new IonFloat(true);
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;

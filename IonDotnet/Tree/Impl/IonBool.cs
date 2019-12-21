@@ -12,7 +12,7 @@ namespace IonDotnet.Tree.Impl
             BoolTrueFlagOn(value);
         }
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;

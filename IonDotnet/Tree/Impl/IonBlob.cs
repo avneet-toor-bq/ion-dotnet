@@ -22,7 +22,7 @@ namespace IonDotnet.Tree.Impl
         /// </summary>
         public static IonBlob NewNull() => new IonBlob();
 
-        public override bool IsEquivalentTo(IonValue other)
+        public override bool IsEquivalentTo(IIonValue other)
         {
             if (!base.IsEquivalentTo(other))
                 return false;
